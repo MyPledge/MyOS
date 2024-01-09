@@ -16,8 +16,7 @@ global_asm!(include_str!("entry.asm"));
 pub fn rust_main() -> ! {
     clear_bss();
     println!("hello world!");
-    loop {}
-    
+    panic!("Shutdown machine!");
 }
 
 fn clear_bss() {
